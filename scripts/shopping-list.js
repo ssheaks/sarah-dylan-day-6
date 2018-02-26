@@ -91,15 +91,6 @@ const shoppingList = (function(){
     });
   }
   
-  // function toggleCheckedItemsFilter() {
-  //   store.hideCheckedItems = !store.hideCheckedItems;
-  // }
-  
-  // function setSearchTerm(val) {
-  //   store.searchTerm = val;
-  // }
-  
-  
   function handleDeleteItemClicked() {
     // like in `handleItemCheckClicked`, we use event delegation
     $('.js-shopping-list').on('click', '.js-item-delete', event => {
