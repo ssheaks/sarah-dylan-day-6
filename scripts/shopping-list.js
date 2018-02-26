@@ -7,24 +7,25 @@ const shoppingList = (function(){
     let itemTitle = `<span class="shopping-item shopping-item__checked">${item.name}</span>`;
     if (!item.checked) {
       itemTitle = `
-        <form id="js-edit-item">
-          <input class="shopping-item type="text" value="${item.name}" />
-        </form>
+              <form id="js-edit-item">
+                <input class="shopping-item type="text" value="${item.name}" />
+              </form>
       `;
     }
   
     return `
-      <li class="js-item-element" data-item-id="${item.id}">
-        ${itemTitle}
-        <div class="shopping-item-controls">
-          <button class="shopping-item-toggle js-item-toggle">
-            <span class="button-label">check</span>
-          </button>
-          <button class="shopping-item-delete js-item-delete">
-            <span class="button-label">delete</span>
-          </button>
-        </div>
-      </li>`;
+          <li class="js-item-element" data-item-id="${item.id}">
+            ${itemTitle}
+            <div class="shopping-item-controls">
+              <button class="shopping-item-toggle js-item-toggle">
+                <span class="button-label">check</span>
+              </button>
+              <button class="shopping-item-delete js-item-delete">
+                <span class="button-label">delete</span>
+              </button>
+            </div>
+          </li>
+      `;
   }
   
   
